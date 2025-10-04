@@ -19,7 +19,7 @@ const ProductDetail = () => {
     const token = localStorage.getItem("token")
 
     const getProductDetail =(productId)=>{
-        axios.get(`http://localhost:4000/products/details/${productId}`, {
+        axios.get(`https://mca-cohort-b-project-backend.onrender.com/products/details/${productId}`, {
            headers :{
                 Authorization : `bearer ${token}`
             }
@@ -36,7 +36,7 @@ const ProductDetail = () => {
 
 
     const deleteHandle = (productId)=>{
-       axios.delete(`http://localhost:4000/products/delete/${productId}`,{
+       axios.delete(`https://mca-cohort-b-project-backend.onrender.com/products/delete/${productId}`,{
          headers :{
                 Authorization : `bearer ${token}`
             }

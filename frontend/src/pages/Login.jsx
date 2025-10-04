@@ -13,7 +13,7 @@ const Login = () => {
     const handleSubmit = (e)=>{
         e.preventDefault()
         console.log( email , password);
-        axios.post("http://localhost:4000/users/login", {email , password})
+        axios.post("https://mca-cohort-b-project-backend.onrender.com/users/login", {email , password})
         .then((res)=>{
             console.log(res);
             localStorage.setItem("token",res.data.token)

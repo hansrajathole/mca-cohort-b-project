@@ -18,7 +18,7 @@ const CreateProduct = () => {
 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        axios.post("http://localhost:4000/products/create", {
+        axios.post("https://mca-cohort-b-project-backend.onrender.com/products/create", {
             title,
             image,
             description,

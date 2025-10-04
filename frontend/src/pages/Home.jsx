@@ -14,7 +14,7 @@ const Home = () => {
 
 
     function getData() {
-        axios.get("http://localhost:4000/")
+        axios.get("https://mca-cohort-b-project-backend.onrender.com/")
         .then((res)=>{
             console.log(res.data.products);
             setproductData(res.data.products)

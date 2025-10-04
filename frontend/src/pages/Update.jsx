@@ -26,7 +26,7 @@ const Update = () => {
         
 
         const getProductData = (productId)=>{
-            axios.get(`http://localhost:4000/products/details/${productId}`,{
+            axios.get(`https://mca-cohort-b-project-backend.onrender.com/products/details/${productId}`,{
                 headers : {
                     authorization : `bearer ${token}`
                 }
@@ -52,7 +52,7 @@ const Update = () => {
         e.preventDefault()
         console.log(category);
         
-        axios.patch(`http://localhost:4000/products/update/${productId}`, {
+        axios.patch(`https://mca-cohort-b-project-backend.onrender.com/products/update/${productId}`, {
             title,
             image,
             description,

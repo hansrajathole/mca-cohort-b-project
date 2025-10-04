@@ -13,7 +13,7 @@ const Register = () => {
     const handleSubmit = (e)=>{
         e.preventDefault()
        
-        axios.post("http://localhost:4000/users/register", {username , email , password})
+        axios.post("https://mca-cohort-b-project-backend.onrender.com/users/register", {username , email , password})
         .then((res)=>{
           console.log(res.data);
           localStorage.setItem("token",res.data.token)
