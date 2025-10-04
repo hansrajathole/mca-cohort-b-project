@@ -72,7 +72,9 @@ const Login = () => {
             className='text-center border border-black bg-blue-500 text-white py-1 px-3 rounded-2xl'>Login</button>
         </div>
         <br />
-        <p>if you dont have an account? <a href="/register">Signup</a></p>
+        <p>if you dont have an account? <button onClick={()=>{
+          navigate("/register")
+        }}>Signup</button></p>
       </form>
     </div>
   )
