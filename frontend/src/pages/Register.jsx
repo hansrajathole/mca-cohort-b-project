@@ -82,7 +82,7 @@ const Register = () => {
         
             </div>
         <br />
-        <p>if you have an account? <button onClick={()=>{
+        <p>if you have an account? <button type='button' onClick={()=>{
             navigate("/login")
           }}>Sign-in</button></p>
       </form> 
